@@ -10,5 +10,8 @@ public class Util {
 		array[i] = array[j];
 		array[j] = temp;
 	}
-
+	
+	public static boolean inBounds(Object[] array, int index) {
+		return ((index >= 0) && (index < array.length));
+	}
 }
