@@ -1,6 +1,6 @@
 package sortingalgorithms;
 
-public abstract class AbstractSorting <T extends Comparable<T>> implements Sorting<T> {
+public abstract class AbstractSorting<T extends Comparable<T>> implements Sorting<T> {
 	@Override
 	public void sort(T[] array) {
 		sort(array, 0, array.length - 1);
