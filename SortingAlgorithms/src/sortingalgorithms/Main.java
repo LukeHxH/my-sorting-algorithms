@@ -19,21 +19,29 @@ public class Main {
 		emptyArray = new Integer[] {};
 		
 		implementation = new BubbleSort<>();
-		/* Change this to test a sorting algorithm.
-		 * 
-		 * For example: implementation = new QuickSort<>();
-		 * */
+		// Instanciar outra classe que representa um algoritmo de ordenação, se quiser testar outro.
+		// Exemplo: implementation = new QuickSort<>();
 		
-		printSortedArray(arrayEvenSize, 2, 6);
-		// Change this if you want to test another arrray.
+		printSortedArray(arrayEvenSize);
+		// Trocar o parâmetro, caso queira testar outro array.
 	}
 	
-	// Sorts an array from first index to last
+	/**
+	 * Ordena um array do início ao fim, e o imprime.
+	 * 
+	 * @param array array que será ordenado.
+	 */
 	public static void printSortedArray(Integer[] array) {
 		printSortedArray(array, 0, array.length - 1);
 	}
 	
-	// Sorts an array from an index to other.
+	/**
+	 * Ordena um array de uma posição determinada a outra, e o imprime.
+	 * 
+	 * @param array array que será ordenado.
+	 * @param left posição válida à esquerda do array.
+	 * @param right posição válida à direita do array.
+	 */
 	public static void printSortedArray(Integer[] array, int left, int right) {
 		System.out.println("BEFORE SORTING: " + Arrays.toString(array));
 		implementation.sort(array, left, right);
