@@ -4,8 +4,6 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class QuickSort<T extends Comparable<T>> extends AbstractSorting<T> {
 	
-	// Randomized pivot included!
-	
 	@Override
 	public void sort(T[] array, int leftIndex, int rightIndex) {
 		if (leftIndex < rightIndex) {
