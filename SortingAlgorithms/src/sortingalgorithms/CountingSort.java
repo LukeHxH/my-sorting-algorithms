@@ -1,7 +1,5 @@
 package sortingalgorithms;
 
-import java.util.Arrays;
-
 public class CountingSort extends AbstractSorting<Integer> {
 
 	@Override
