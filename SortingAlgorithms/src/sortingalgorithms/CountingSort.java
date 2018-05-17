@@ -4,7 +4,7 @@ public class CountingSort extends AbstractSorting<Integer> {
 
 	@Override
 	public void sort(Integer[] array, int leftIndex, int rightIndex) {
-		if (rightIndex > leftIndex && inBounds(array, leftIndex) && inBounds(array, rightIndex)) {
+		if (rightIndex > leftIndex) {
 			Integer[] sorted = new Integer[array.length];
 			
 			Integer maxAndMin[] = maxAndMin(array, leftIndex, rightIndex);
@@ -41,10 +41,6 @@ public class CountingSort extends AbstractSorting<Integer> {
 			if (array[i] < min) min = array[i];
 		}
 		return new Integer[] {min, max};
-	}
-	
-	private boolean inBounds(Integer[] array, int index) {
-		return index >= 0 && index < array.length;
 	}
 
 }
